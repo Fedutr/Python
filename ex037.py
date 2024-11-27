@@ -3,12 +3,17 @@ print('\033[1mBase de Conversão\033[m')
 print('-='*20)
 
 num = int(input('Digite um número: '))
-tipo = int(input('Conversão\nDigite 1 para binário\nDigite 2 para octal\nDigite 3 para hexadecimal: '))
-
+print('''Conversão
+[ 1 ] para binário
+[ 2 ] para octal
+[ 3 ] para hexadecimal''')
+tipo = int(input('Sua opção: '))
 print('O número digitado foi {}'.format(num))
 if tipo == 1:
-    print('Convertido para binário fica: {:}'.format(bin(num)))
+    print('Convertido para binário fica: {}'.format(bin(num)[2:]))
 elif tipo == 2:
-    print('Convertido para octal fica: {:}'.format(oct(num)))
+    print('Convertido para octal fica: {}'.format(oct(num)[2:]))
+elif tipo == 3:
+    print('Convertido para hexadecimal fica: {}'.format(hex(num)[2:]))
 else:
-    print('Convertido para hexadecimal fica: {:}'.format(hex(num)))
+    print('Opção Invalida')
