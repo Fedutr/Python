@@ -1,0 +1,1 @@
+não consegui baixar a biblioteca no steam deck
