@@ -10,3 +10,9 @@ while contador > 0:
     print(f'{contador} * ' if contador > 1 else f'{contador} = ',end='')
     contador -= 1
 print(fatorial)
+
+# Fatorial de um número com math
+from math import factorial
+n = int(input('Digite umn número para calcular seu Fatorial: '))
+f = factorial(n)
+print('O fatorial de {} é {}'.format(n, f))
